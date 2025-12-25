@@ -1,0 +1,162 @@
+/* NAVBAR */
+.custom-navbar {
+    background: transparent;
+    padding: 1rem 0;
+    transition: background 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+    color: #e0e0e0;
+    margin-left: 1rem;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #00c6ff;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding-top: 100px; /* space for navbar */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.hero-section.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* TEXT STYLES */
+.gradient-text {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+    max-width: 600px;
+    margin: auto;
+    color: #cfd8dc;
+}
+
+/* SOCIAL ICONS */
+.social-icon {
+    font-size: 1.7rem;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00c6ff;
+    transform: translateY(-6px);
+}
+body {
+    background-image: url("Background_IMG.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-icon {
+    font-size: 1.6rem;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+    color: #00c6ff;
+    transform: translateY(-4px);
+}
+
+
+
+/* SKILLS CARD EFFECT */
+/* SKILLS CARD EFFECT */
+#skills .card {
+    cursor: pointer;
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        background-color 0.4s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Hover effect */
+/* Hover effect on skill cards */
+#skills .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25) !important;
+    cursor: pointer;
+}
+
+/* Active (clicked) effect */
+#skills .card.active {
+    border: 2px solid #667eea; /* your primary color */
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.5) !important;
+    transform: translateY(-12px) scale(1.02);
+    background-color: lightsalmon; /* light background for contrast */
+}
+
+
+/* Make text readable on active */
+#skills .card.active h3,
+#skills .card.active li {
+    color: #ffffff;
+}
+
+#skills .card.active .list-group-item {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+#projects .card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+    background: rgba(102, 126, 234, 0.08);
+}
+
+.hobby-card {
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    border-radius: 12px;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+    background: #f0fdf4
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
